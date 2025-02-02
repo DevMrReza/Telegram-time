@@ -1,29 +1,62 @@
-# Telegram Auto Name & Bio Updater
+# ⏳ Telegram  Bio & Name   
 
-This Python script automatically updates your Telegram profile's last name and bio every minute with the current time in various custom fonts. The time is based on the Asia/Tehran timezone and updates in real-time using cron jobs.
+### 🚀 Automatically Updates Your Telegram Name & Bio Based on Real-Time Clock 🕰  
 
-## Features
+This project is a **Telegram bot** that updates your **last name and bio** every minute based on the **current time in Tehran**! 📌  
 
-- **Auto Profile Update**: Changes your Telegram profile's last name and bio every minute.
-- **Multiple Fonts**: Randomly selects from a list of custom fonts for the time digits.
-- **Real-time Updates**: Uses cron scheduling to update the time every minute.
-- **Timezone**: The script works based on the Asia/Tehran timezone.
+---
 
-## Requirements
+## ✨ Features:
+- ✅ **Real-time auto-update** of last name and bio
+  
+- 🎨 **Multiple stylish fonts** for displaying the time
+  
+- 🛠 **Bot control commands:** `bot on` & `bot off`
+  
+- 🔐 **Secure & lightweight**—no need for an external API  
 
-- Python 3.7 or higher
-- A Telegram API ID and API Hash (you can get them from [my.telegram.org](https://my.telegram.org/))
-- The following Python libraries:
-  - `pyrogram`
-  - `aiocron`
-  - `pytz`
+---
 
-## Installation
+## 🛠 Installation & Setup
 
-Follow these steps to set up and run the script on your local machine:
+### 1️⃣ Prerequisites:
+Ensure you have **Python** installed along with the required dependencies:
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/DevMrReza/Telegram-time.git
-   cd Telegram-time
+```bash
+pip install telethon pytz
+```
+
+## 2️⃣ Obtain Telegram API Credentials:
+Visit my.telegram.org
+Log in with your Telegram account
+Click "API Development Tools"
+Generate and note your API ID and API Hash
+
+---
+
+### 🚀 Running the Bot
+After setting up the API credentials, run the script using:
+
+```bash
+python3  main.py
+```
+
+---
+
+### 🛠 Bot Commands:
+The bot can be controlled using two simple commands:
+
+| Command   | Functionality           |
+|-----------|-------------------------|
+| `bot on`  | ✅ Turns the bot ON      |
+| `bot off` | ❌ Turns the bot OFF     |
+
+---
+
+### 📝 How It Works:
+The bot fetches the current time in Tehran timezone (Asia/Tehran).
+It converts the time into random stylish fonts from a predefined list.
+It updates the last name and bio of your Telegram profile every 60 seconds.
+You can enable or disable the bot using simple chat commands.
+
 
